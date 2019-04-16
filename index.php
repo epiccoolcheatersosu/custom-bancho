@@ -15,7 +15,7 @@ $toprint = array();
 $postdata = file_get_contents('php://input');
 
 //default player data
-$userName = 'nouser';
+$userName = 'Guest';
 
 //TODO: implement site, if ua is not 'osu!'
 
@@ -97,16 +97,15 @@ if (!isset($header['osu-token'])) {
 			//foreach player online, packet 12 or 95
 			CreatePacket(64, '#osu'),	//main channel
 			CreatePacket(64, '#news'),
-			CreatePacket(65, array('#osu', 'Main channel', 2147483647 - 1)),	//secondary channel
-			CreatePacket(65, array('#news', 'This will contain announcements and info, while beta lasts.', 1)),
-			CreatePacket(65, array('#kfc', 'Kawaii friends club', 0)),	//secondary channel
-			CreatePacket(65, array('#aqn', 'cuz fuck yeah', 1337)),
+			CreatePacket(65, array('#osu', 'General chat lol', 2147483647 - 1)),	//secondary channel
+			CreatePacket(65, array('#news', 'Please check the news channel .w.', 1)),
+			CreatePacket(65, array('#kfc', 'FAT PEOPLE', 0)),	//secondary channel
+			CreatePacket(65, array('#aqnandotherhacks', 'Please talk about ur hacks here', 1337)),
 			//CreatePacket(105, "HoLLy_HaCKeR eyes have awakened.\nGo pray to your mommy, banhammer is on it's way.")	//scary msg
 
 			//players
 			//GetOnlinePlayersPackets(),
 
-			CreatePacket(07, array('BanchoBob', 'This is a test message! First step to getting chat working!', '#osu', 3))
 		);
 	}
 
