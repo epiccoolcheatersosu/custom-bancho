@@ -1,5 +1,6 @@
-# custom-bancho
+#bancho
 
-This is some code for a custom/private bancho server. I'm not saying it's good, but it (partially) works.
+Orignally created by HoLLy, thank you for making nouse, ripple & kaota possible!
 
-For a better bancho server, go here: https://github.com/Itsyuka/KaiBanchoo-Web
+todo list:
+1. idk
